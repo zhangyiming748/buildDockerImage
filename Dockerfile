@@ -7,7 +7,7 @@ RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
 # Update the system, install OpenSSH Server, and set up users
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y openssh-server sudo
+    apt-get install -y openssh-server sudo ffmpeg mediainfo ncdu
 
 # Create user and set password for user and root user
 RUN  useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 ubuntu && \
