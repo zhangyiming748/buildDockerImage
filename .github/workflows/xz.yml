@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: build
-        run: docker build -t trans:latest /home/runner/work/TransInDocker/TransInDocker
+        run: docker build -t ubuntu:sshd /home/runner/work/buildDockerImage/buildDockerImage
       - name: saveSpace
         run: rm -rf /opt/hostedtoolcache
       - name: export
