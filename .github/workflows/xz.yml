@@ -28,7 +28,6 @@ jobs:
         run: rm -rf /opt/hostedtoolcache
       - name: export
         run: docker save trans:latest | xz --threads=0 -9e --memlimit-compress=0 > trans.tar.xz
-        # run: docker save whisper:latest -o whisper.tar
       # More assembly might be required: Docker logins, GPG, etc.
       # It all depends on your needs.
       - name: Upload Build Artifacts
